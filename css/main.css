@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+  
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+/* スタートボタンとゲームコンテナを包む要素 */
+#game-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* ゲームコンテナのスタイル */
+#game-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ゲーム盤のスタイル */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f2;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* メッセージのスタイル */
+#message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* スタートボタンのスタイル */
+#start-button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#start-button-container button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff5e00;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    font-weight: bold;
+}
+
+#start-button-container button:hover {
+    background-color: #ff8800;
+    transform: scale(1.05);
+}
+
+#start-button-container button:active {
+    background-color: #ffb005;
+    transform: scale(0.95);
+}
+
+/* ライツアウトのスタイル */
+#lights-out-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.lights-out-cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+.lights-out-cell-on {
+    background-color: #4CAF50;
+}
+
+/* ライツアウトメッセージのスタイル */
+#lights-out-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* ライツアウトメッセージのスタイル */
+#lights-on-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#lights-out-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ライツアウトボタンのスタイル */
+.button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #ff5e00;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #ff8800;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #ffb005;
+    transform: scale(0.95);
+}
+
+
+
+
+
+

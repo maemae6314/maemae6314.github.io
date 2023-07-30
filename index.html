@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Eiiti Maeda">
+    <meta name="keywords" content="JavaScript,ゲーム,乱数">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+
+    <title>ゲーム</title>
+</head>
+<body>
+    <h1 id="top">ちょっとした暇つぶしゲーム</h1>
+    <h2>〇×ゲーム</h2>
+    <p>〇:コンピュータ, ×:あなた</p>
+    <div id="game-wrapper">
+        <div id="start-button-container">
+            <button onclick="startGame()">スタート</button>
+        </div>
+        <div id="game-container" style="display: none;">
+            <div class="board" id="board">
+                <!-- ゲーム盤のセルを生成する部分 -->
+            </div>
+            <p id="message"></p>
+        </div>
+    </div>
+
+
+    <h2>ライツアウト</h2>
+    <p>〇がオン,×がオフ<p>
+    <div class="lights-out-board" id="lights-out-board">
+    </div>
+    <p id="lights-out-message"></p>
+    <p id="lights-on-message"></p>
+    <div id="lights-out-button-container">
+        <button class="button" onclick="turnOffAll()">すべてのライトを消す</button>
+        <button class="button" onclick="turnONAll()">すべてのライトを点灯する</button>
+    </div>
+    
+    <a href="#top"><span>ページトップへ戻る</span></a>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
